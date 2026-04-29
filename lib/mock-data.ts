@@ -1,0 +1,148 @@
+import { TimesheetEntry } from "@/types";
+
+export const MOCK_TIMESHEETS: TimesheetEntry[] = [
+  {
+    id: "ts-1",
+    weekNumber: 1,
+    dateRange: "1 - 5 January, 2024",
+    startDate: "2024-01-01",
+    endDate: "2024-01-05",
+    status: "COMPLETED",
+    totalHours: 40,
+    tasks: [
+      {
+        id: "t-1",
+        date: "2024-01-01",
+        project: "Website Redesign",
+        typeOfWork: "Development",
+        description: "Homepage Development",
+        hours: 8,
+      },
+      {
+        id: "t-2",
+        date: "2024-01-02",
+        project: "Website Redesign",
+        typeOfWork: "Development",
+        description: "Navigation component",
+        hours: 8,
+      },
+    ],
+  },
+  {
+    id: "ts-2",
+    weekNumber: 2,
+    dateRange: "8 - 12 January, 2024",
+    startDate: "2024-01-08",
+    endDate: "2024-01-12",
+    status: "COMPLETED",
+    totalHours: 38,
+    tasks: [],
+  },
+  {
+    id: "ts-3",
+    weekNumber: 3,
+    dateRange: "15 - 19 January, 2024",
+    startDate: "2024-01-15",
+    endDate: "2024-01-19",
+    status: "INCOMPLETE",
+    totalHours: 20,
+    tasks: [],
+  },
+  {
+    id: "ts-4",
+    weekNumber: 4,
+    dateRange: "22 - 26 January, 2024",
+    startDate: "2024-01-22",
+    endDate: "2024-01-26",
+    status: "COMPLETED",
+    totalHours: 40,
+    tasks: [
+      {
+        id: "t-3",
+        date: "2024-01-22",
+        project: "Mobile App",
+        typeOfWork: "Development",
+        description: "Homepage Development",
+        hours: 8,
+      },
+      {
+        id: "t-4",
+        date: "2024-01-23",
+        project: "Mobile App",
+        typeOfWork: "Bug fixes",
+        description: "Fix login flow issues",
+        hours: 4,
+      },
+      {
+        id: "t-5",
+        date: "2024-01-23",
+        project: "Website Redesign",
+        typeOfWork: "Design review",
+        description: "Homepage Development",
+        hours: 4,
+      },
+    ],
+  },
+  {
+    id: "ts-5",
+    weekNumber: 5,
+    dateRange: "28 January - 1 February, 2024",
+    startDate: "2024-01-28",
+    endDate: "2024-02-01",
+    status: "MISSING",
+    totalHours: 0,
+    tasks: [],
+  },
+  {
+    id: "ts-6",
+    weekNumber: 6,
+    dateRange: "5 - 9 February, 2024",
+    startDate: "2024-02-05",
+    endDate: "2024-02-09",
+    status: "COMPLETED",
+    totalHours: 40,
+    tasks: [],
+  },
+  {
+    id: "ts-7",
+    weekNumber: 7,
+    dateRange: "12 - 16 February, 2024",
+    startDate: "2024-02-12",
+    endDate: "2024-02-16",
+    status: "INCOMPLETE",
+    totalHours: 16,
+    tasks: [],
+  },
+  {
+    id: "ts-8",
+    weekNumber: 8,
+    dateRange: "19 - 23 February, 2024",
+    startDate: "2024-02-19",
+    endDate: "2024-02-23",
+    status: "MISSING",
+    totalHours: 0,
+    tasks: [],
+  },
+];
+
+export const PROJECTS = [
+  "Website Redesign",
+  "Mobile App",
+  "API Integration",
+  "Design System",
+  "Customer Portal",
+];
+
+export const WORK_TYPES = [
+  "Development",
+  "Bug fixes",
+  "Design review",
+  "Meeting",
+  "Planning",
+  "Testing",
+  "Documentation",
+];
+
+export const DUMMY_USERS = [
+  { email: "haider@gmail.com", password: "haider123", name: "Haider" },
+];

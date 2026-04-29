@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand: #2563eb;
+    --brand-dark: #1d4ed8;
+  }
+
+  body {
+    @apply antialiased text-gray-800;
+  }
+}
+.text-red-500 {
+  color:#000 !important;
+}
