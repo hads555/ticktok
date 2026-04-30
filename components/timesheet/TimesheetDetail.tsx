@@ -228,7 +228,7 @@ export default function TimesheetDetail({ initialTimesheet }: Props) {
                   {dayTasks.map((task) => (
                     <div
                       key={task.id}
-                      className="mb-[10px] flex items-center justify-between px-4 py-2.5 bg-white border border-gray-100 rounded-lg hover:bg-primary-700 transition-colors group"
+                      className="mb-[10px] flex items-center justify-between px-4 py-2.5 bg-white border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors group"
                     >
                       {/* Task description */}
                       <span className="text-sm text-gray-700 flex-1 truncate pr-4">
@@ -258,7 +258,7 @@ export default function TimesheetDetail({ initialTimesheet }: Props) {
                   {/* Add new task button */}
                   <button
                     onClick={() => openAddModal(date)}
-                    className="w-full border border-dashed border-blue-300 hover:border-blue-400 bg-white hover:bg-blue-50/30 rounded-lg py-2.5 text-sm text-blue-400 hover:bg-primary-700 transition-all flex items-center justify-center gap-1.5 mt-1"
+                    className="w-full border border-dashed border-blue-300 hover:border-blue-400 bg-white hover:bg-blue-50/30 rounded-lg py-2.5 text-sm text-blue-400 transition-all flex items-center justify-center gap-1.5 mt-1"
                   >
                     <span className="text-base leading-none font-light">+</span>
                     Add new task

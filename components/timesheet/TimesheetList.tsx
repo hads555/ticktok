@@ -183,7 +183,7 @@ export default function TimesheetList() {
         <table className="w-full text-sm" aria-label="Timesheets table">
           <thead>
             <tr className="border-b border-gray-200 bg-gray-50/60">
-              <th className="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider min-w-[100px] bg-gray-100 border-b border-gray-300">
+              <th className="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider min-w-[100px] bg-gray-50 border-b border-gray-300">
                 Week # <SortIcon />
               </th>
               <th className="text-left px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider min-w-[260px]">
@@ -226,7 +226,7 @@ export default function TimesheetList() {
                     className="hover:bg-gray-50/70 transition-colors"
                   >
                     {/* Week # */}
-                    <td className="px-6 py-4 text-gray-700 font-medium bg-gray-100 border-b border-gray-200">
+                    <td className="px-6 py-4 text-gray-700 font-medium bg-gray-50 border-b border-gray-200">
                       {ts.weekNumber}
                     </td>
 
