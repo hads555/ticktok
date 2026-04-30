@@ -168,7 +168,7 @@ export default function TimesheetDetail({ initialTimesheet }: Props) {
       <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
 
         {/* ── Header: title left, progress bar + % right, all on one row ── */}
-        <div className="flex items-center justify-between gap-6 mb-1">
+        <div className="flex items-center justify-between gap-6 mb-1 max-[480px]:flex-col">
           <h1 className="text-xl font-semibold text-gray-900 whitespace-nowrap">
             This week&apos;s timesheet
           </h1>
@@ -217,7 +217,7 @@ export default function TimesheetDetail({ initialTimesheet }: Props) {
           {weekDates.map((date) => {
             const dayTasks = grouped[date] ?? [];
             return (
-              <div key={date} className="flex justify-between">
+              <div key={date} className="flex justify-between max-[480px]:flex-col">
                 {/* Day label */}
                 <h2 className="text-sm font-semibold text-gray-800 mb-2">
                   {formatDayLabel(date)}
